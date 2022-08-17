@@ -1,0 +1,22 @@
+LEGEND:
+Program				Ministry of Research and Innovation peer-reviewed research funding programs 
+Project Number			Unique number used to identify research funding projects
+Project Title			Project title
+Project Description		Project description 
+Area Primary			Science and technology classification system that allows the Ministry to classify supported research in categories consistent with other funders in Canada
+Area Secondary			Science and technology classification system that allows the Ministry to classify supported research in categories consistent with other funders in Canada
+Discipline Primary		Primary discipline or field codes that allow the Ministry to classify supported research in categories consistent with other funders in Canada.
+Discipline Secondary		Secondary discipline or field codes that allow the Ministry to classify supported research in categories consistent with other funders in Canada.
+Round				Name/number of Ministry of Research and Innovation funding round
+Approval Date			Date funding commitment was approved by the Ministry
+Lead Research Institution	Lead research institution
+City				City where the lead research institution is located
+Ontario Commitment		Ontario funding commitment to the project
+Total Project Costs		Total project costs from all funding sources
+Keyword	Relevant 		keywords
+PRJ EXPENDITURE TYPE		Operating or Capital expenditures
+Salutation			Salutation of principal investigator
+First Name			First name of principal investigator 
+Middle_Name			Middle name of principal investigator
+Last Name			Last name of principal investigator
+OIA AREA			Ontario Innovation Agenda priority area
