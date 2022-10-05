@@ -9,6 +9,7 @@ cffi==1.15.1
 click @ file:///C:/ci/click_1646038595831/work
 colorama==0.4.5
 cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+Cython @ file:///C:/ci/cython_1647850559892/work
 debugpy==1.6.3
 decorator==5.1.1
 defusedxml==0.7.1
@@ -16,6 +17,7 @@ entrypoints==0.4
 executing==1.0.0
 fastjsonschema==2.16.2
 fonttools==4.25.0
+gensim @ file:///C:/ci/gensim_1646825438310/work
 importlib-metadata==4.12.0
 ipykernel==6.15.3
 ipython==8.5.0
@@ -77,6 +79,7 @@ scipy @ file:///C:/ci/scipy_1641555170412/work
 Send2Trash==1.8.0
 sip==4.19.13
 six @ file:///tmp/build/80754af9/six_1644875935023/work
+smart-open @ file:///C:/ci/smart_open_1651235069716/work
 soupsieve==2.3.2.post1
 stack-data==0.5.0
 terminado==0.15.0
