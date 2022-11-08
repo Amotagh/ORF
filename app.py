@@ -1,28 +1,35 @@
-from operator import methodcaller
-import re
+
+
+
 from flask import Flask, render_template,request
-import pandas as pd
-import numpy as np
-import sklearn
+
 from joblib import load
+from src.preprocess import clean_text
+
 
 app = Flask(__name__)
 
-@app.route("/",methods=['GET','POST'])
-def hello_world():
-    request_type_str=request.method
-    if request_type_str == 'GET':
-        return render_template('index.html')
-    
-        text=request.form['text']
-        model_tfidf=load('model_tfidf.joblib')
-        data=model_tfidf.transform(text)
-        model_logistic=load('model.joblib')
-        pred = model_logistic.predict (data)
-        if pred[0] == 0:
-             return render_template('index0.html')  
-        else:
-             return render_template('index1.html')
+model_tfidf=load(open('./models/model_tfidf.joblib', 'rb'))
+model_logistic=load(open('./models/model.joblib', 'rb'))
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    text = request.form["text"]
+    text = clean_text(text)
+    data = model_tfidf.transform([text])
+    pred = model_logistic.predict(data)
+    print(text)
+    print(pred)
+
+    funding_range = "$,000 to $150,000" if pred[0] == 0 else "$150,000 to $ 14,000,000"
+    return render_template(
+        "index.html",
+        prediction_text=f'Your project titled "{text}" will revceive between {funding_range} in funding.',
+    )
 
 
         
