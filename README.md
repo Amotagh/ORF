@@ -15,21 +15,28 @@ Research is always important because it allows scientists and engineers to contr
 - Project prediction app to estimate the funding range
 
 # Usage
+To use this app you need to write the meaningful text.
 - Clone Repo:
-'''
+```
 git clone https://github.com/Amotagh/research-fund-predictor.git
-'''
+```
 
 
 - Install al requirements using pip
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 -  To run the web application, stay in the main directory and run the command
--'''
+```
 python app.py
-'''
+```
+# Future work
+- Add on topic detection model to prevent unmeaningful text
+- Develop a model based on the project description
+- Use transformers to increase the accuracy of the model 
+
+
 
 
 
