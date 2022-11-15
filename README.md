@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 -  To run the web application, stay in the main directory and run the command
 ```
-python app.py
+flask run
 ```
 # Future work
 - Add on topic detection model to prevent unmeaningful text
