@@ -1,11 +1,23 @@
-<center>
-    <from method=""POST">
-        <label> Input your project description: </label>
-        <input name="text">
-        <input type="submit">
-    </from>
-    <br>
-    <br>
-    <b> {{ prediction_text }} </b> 
-
-</center>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <!-- Quick Start: CSS -->
+ </head>
+  
+<body>
+  <div id="header-img" align="center">
+           <br>
+            <p>Write your project title:</p>
+            <!-- Inputs for our ML model -->
+              <form action="{{ url_for('predict')}}"method="post">
+                <input type="text" name="text" placeholder="project title" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">submit</button>
+              </form>
+            <br>
+            <br>
+            <b> {{ prediction_text }} </b>
+      </div>
+  </div>
+</body>
+</html>

@@ -25,7 +25,7 @@ def predict():
     print(text)
     print(pred)
 
-    funding_range = "$,000 to $150,000" if pred[0] == 0 else "$150,000 to $ 14,000,000"
+    funding_range = "$5,000 to $150,000" if pred[0] == 0 else "$150,000 to $ 14,000,000"
     return render_template(
         "index.html",
         prediction_text=f'Your project titled "{text}" will revceive between {funding_range} in funding.',
